@@ -9,6 +9,9 @@ import (
 	"io"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/labels"
+	"k8s.io/client-go/informers"
+	"k8s.io/client-go/tools/cache"
 	"k8s.io/utils/integer"
 )
 
@@ -206,4 +209,48 @@ func MaxContainerRestarts(instance *entity.Instance) (int, error) {
 		maxRestarts = integer.IntMax(maxRestarts, int(c.RestartCount))
 	}
 	return maxRestarts, nil
+}
+
+func GetPodInfo(instance *entity.Instance) (pods chan []*v1.Pod) {
+	config := &Config{
+		ApiServer:  instance.Cluster.ApiServer,
+		Token:      instance.Cluster.Token,
+		KubeConfig: instance.Cluster.KubeConfig,
+	}
+	client, err := NewKubernetesClient(config)
+	if err != nil {
+		return
+	}
+	factory := informers.NewSharedInformerFactory(client, 0)
+	podInformer := factory.Core().V1().Pods()
+	informer := podInformer.Informer()
+
+	stopCh := make(chan struct{})
+	defer close(stopCh)
+	go factory.Start(stopCh)
+
+	if !cache.WaitForCacheSync(stopCh, informer.HasSynced) {
+		logger.Log.Errorf("Failed to sync pod info")
+		return
+	}
+
+	//informer.AddEventHandler(cache.ResourceEventHandlerFuncs{
+	//	AddFunc: func(obj interface{}) {
+	//		pod := obj.(*v1.Pod)
+	//	},
+	//	UpdateFunc: func(oldObj, newObj interface{}) {
+	//		pod := newObj.(*v1.Pod)
+	//	},
+	//	DeleteFunc: func(obj interface{}) {
+	//		pod := obj.(*v1.Pod)
+	//	},
+	//})
+	podLister := podInformer.Lister()
+	podList, err := podLister.Pods(instance.Namespace).List(labels.Everything())
+	if err != nil {
+		return
+	}
+	pods <- podList
+	<-stopCh
+	return
 }
