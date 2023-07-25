@@ -1,0 +1,646 @@
+[2023-07-20 09:50:17] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:50:18] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:50:18] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 09:50:18] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:50:18] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:51:29] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:14.8754ms req_method:GET req_uri:/api/v1/cluster/iam/user/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d status_code:200]} 
+[2023-07-20 09:52:28] [ERROR] Failed to get kubesphere workspace:the server could not find the requested resource (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*workspaceService).GetWorkspaceList: 45) {map[]} 
+[2023-07-20 09:52:28] [ERROR] List User info failed: the server could not find the requested resource (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListWorkspaces: 40) {map[]} 
+[2023-07-20 09:52:28] [INFO] [Recovery] 2023/07/20 - 09:52:28 panic recovered:
+the server could not find the requested resource
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2195a95)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x21cee53)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/workspace.go:41 (0x21cee35)
+	ListWorkspaces: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x21dad4b)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x21dad28)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x21d9cfa)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x21d9ce6)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x20fe0aa)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x20fdd31)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x20fd851)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xbbb755)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xbb6c71)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x850e60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 09:53:00] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:53:00] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:53:00] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 09:53:00] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:53:00] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:53:44] [ERROR] Failed to get kubesphere workspace:the server could not find the requested resource (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*workspaceService).GetWorkspaceList: 45) {map[]} 
+[2023-07-20 09:53:44] [ERROR] List User info failed: the server could not find the requested resource (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListWorkspaces: 40) {map[]} 
+[2023-07-20 09:53:44] [INFO] [Recovery] 2023/07/20 - 09:53:44 panic recovered:
+the server could not find the requested resource
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x281aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x28619fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/workspace.go:41 (0x286f536)
+	ListWorkspaces: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x271883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x28850da)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x271883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x288334e)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x271883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2727c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x27276e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x645e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x63f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x99340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 09:54:01] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:54:02] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:54:02] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 09:54:02] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:54:02] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:54:05] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:18.6537ms req_method:GET req_uri:/api/v1/cluster/tenant/workspace/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d status_code:200]} 
+[2023-07-20 09:56:04] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:0s req_method:POST req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:404]} 
+[2023-07-20 09:56:32] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:56:32] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:56:32] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 09:56:32] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:56:32] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 09:56:37] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:0s req_method:POST req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:404]} 
+[2023-07-20 10:08:11] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:08:11] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 46) {map[]} 
+[2023-07-20 10:08:11] [INFO] [Recovery] 2023/07/20 - 10:08:11 panic recovered:
+Get "https://localhost/api/v1/namespaces": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x312aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x31719fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:47 (0x317ecd1)
+	ListProjects: logger.Log.Errorf("List User info failed: %s", err.Error())
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x302883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x31950da)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x302883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x319334e)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x302883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x3037c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x30376e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xf55e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xf4f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x9a9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:08:32] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:08:32] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:08:32] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:08:32] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:08:32] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:09:33] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:09:33] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 10:09:33] [INFO] [Recovery] 2023/07/20 - 10:09:33 panic recovered:
+Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x358aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x35d19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x35dec5e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x35f505a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x35f32ce)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x3497c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x34976e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x13b5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x13af714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0xe09340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:09:48] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:09:49] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:09:49] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:09:49] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:09:49] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:11:09] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:11:09] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 10:11:09] [INFO] [Recovery] 2023/07/20 - 10:11:09 panic recovered:
+Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3Dwuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x358aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x35d19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x35dec5e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x35f505a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x35f32ce)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x348883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x3497c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x34976e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x13b5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x13af714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0xe09340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:11:31] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:11:31] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:11:31] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:11:31] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:11:31] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:12:11] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:12:11] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 10:12:11] [INFO] [Recovery] 2023/07/20 - 10:12:11 panic recovered:
+Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2a6aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2ab19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2abec5e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2ad505a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2ad32ce)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2977c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x29776e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x895e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x88f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x2e9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:12:24] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:12:24] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:12:24] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:12:24] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:12:24] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:15:12] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:15:12] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 10:15:12] [INFO] [Recovery] 2023/07/20 - 10:15:12 panic recovered:
+Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2a6aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2ab19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2abec5e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2ad505a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2ad32ce)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2977c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x29776e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x895e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x88f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x2e9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:15:31] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:15:32] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:15:32] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:15:32] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:15:32] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:18:27] [ERROR] Failed to get kubesphere project:Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 28) {map[]} 
+[2023-07-20 10:18:27] [ERROR] List User info failed: Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it. (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 10:18:27] [INFO] [Recovery] 2023/07/20 - 10:18:27 panic recovered:
+Get "https://localhost/api/v1/namespaces?labelSelector=kubesphere.io%2Fworkspace%3A+wuju": dial tcp [::1]:443: connectex: No connection could be made because the target machine actively refused it.
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2a6aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2ab19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2abec5e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2ad505a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2ad32ce)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x296883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2977c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x29776e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x895e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x88f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x2e9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 10:19:44] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:19:44] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:19:44] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 10:19:44] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 10:19:44] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:39:53] [ERROR] Failed to get kubesphere project:unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 34) {map[]} 
+[2023-07-20 13:39:53] [ERROR] List User info failed: unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 13:39:53] [INFO] [Recovery] 2023/07/20 - 13:39:53 panic recovered:
+unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]')
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2505a95)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x253ec10)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x253ebf2)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x254aecb)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x254aea8)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2549e7a)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2549e66)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x246e0aa)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x246dd31)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x246d851)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xf2b755)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xf26c71)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0xbc0e60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 13:40:36] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:40:37] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:40:37] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 13:40:37] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:40:37] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:41:24] [ERROR] Failed to get kubesphere project:unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 34) {map[]} 
+[2023-07-20 13:41:24] [ERROR] List User info failed: unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 13:41:24] [INFO] [Recovery] 2023/07/20 - 13:41:24 panic recovered:
+unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]')
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2f7aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2fc19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2fcef3e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2fe533a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2fe35ae)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2e87c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x2e876e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xda5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xd9f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x7f9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 13:41:34] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:41:35] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:41:35] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 13:41:35] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:41:35] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:44:46] [ERROR] Failed to get kubesphere project:unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 34) {map[]} 
+[2023-07-20 13:44:46] [ERROR] List User info failed: unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 13:44:46] [INFO] [Recovery] 2023/07/20 - 13:44:46 panic recovered:
+unable to parse requirement: <nil>: Invalid value: "kubesphere.io/workspace:": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]')
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2f7aed8)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2fc19fb)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2fcef3e)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2fe533a)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2fe35ae)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2e7883c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2e87c13)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x2e876e4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xda5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xd9f714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x7f9340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 13:46:05] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:05] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:05] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 13:46:05] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:05] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:07] [INFO] [Recovery] 2023/07/20 - 13:46:07 panic recovered:
+assignment to entry in nil map
+C:/Program Files/Go/src/runtime/map_faststr.go:205 (0x448d9)
+	mapassign_faststr: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/kubernetes/namespace.go:50 (0x1858156)
+	GetNamespaces: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/service/kubesphere/project.go:32 (0x1a1de15)
+	(*projectService).GetProjectList: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:46 (0x1a1ebb1)
+	ListProjects: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x1a2af0b)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x1a2aee8)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x1a29eba)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x1a29ea6)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x194e0ea)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x194dd71)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x194d891)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x40b755)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x406c71)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0xa0e60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 13:46:39] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:39] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:39] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 13:46:39] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:46:39] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:47:21] [INFO] [Recovery] 2023/07/20 - 13:47:20 panic recovered:
+assignment to entry in nil map
+C:/Program Files/Go/src/runtime/map_faststr.go:205 (0x3a6ba7)
+	mapassign_faststr: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/kubernetes/namespace.go:50 (0x29420ae)
+	GetNamespaces: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/service/kubesphere/project.go:32 (0x2bdd518)
+	(*projectService).GetProjectList: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:46 (0x2bded21)
+	ListProjects: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2bf52fa)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2bf356e)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2a97bd3)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x2a976a4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x9b5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x9af714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x409340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 13:48:52] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:48:52] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:48:52] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 13:48:52] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:48:52] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 13:52:16] [ERROR] Faile to get cluster info: Get "https://172.30.1.84:6443/version": net/http: TLS handshake timeout (github.com/mensylisir/kmpp-middleware/src/service/cluster.clusterService.Sync: 138) {map[]} 
+[2023-07-20 13:52:18] [ERROR] gather cluster info error: Get "https://172.30.1.84:6443/version": net/http: TLS handshake timeout (github.com/mensylisir/kmpp-middleware/src/cron/job.(*WatchClusterInfo).Run.func1: 34) {map[]} 
+[2023-07-20 14:05:45] [ERROR] gather cluster info error: Get "https://172.30.1.84:6443/version": net/http: TLS handshake timeout (github.com/mensylisir/kmpp-middleware/src/cron/job.(*WatchClusterInfo).Run.func1: 35) {map[]} 
+[2023-07-20 14:05:45] [INFO] [Recovery] 2023/07/20 - 14:05:45 panic recovered:
+assignment to entry in nil map
+C:/Program Files/Go/src/runtime/map_faststr.go:205 (0x3a6ba7)
+	mapassign_faststr: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/kubernetes/namespace.go:50 (0x29420ae)
+	GetNamespaces: labelSelector.MatchLabels["kubesphere.io/workspace"] = namespaceEntity.WorkspaceName
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/service/kubesphere/project.go:32 (0x2bdd518)
+	(*projectService).GetProjectList: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:46 (0x2bded21)
+	ListProjects: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2bf52fa)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2bf356e)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2a887fc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2a97bd3)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x2a976a4)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x9b5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x9af714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x409340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 14:05:59] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:05:59] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:05:59] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:05:59] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:05:59] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:22:44] [ERROR] Failed to get kubesphere project:unable to parse requirement: <nil>: Invalid value: "&LabelSelector{MatchLabels:map[string]string{kubesphere.io/workspace:": prefix part a lowercase RFC 1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*'); name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/service/kubesphere.(*projectService).GetProjectList: 34) {map[]} 
+[2023-07-20 14:22:44] [ERROR] List User info failed: unable to parse requirement: <nil>: Invalid value: "&LabelSelector{MatchLabels:map[string]string{kubesphere.io/workspace:": prefix part a lowercase RFC 1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*'); name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]') (github.com/mensylisir/kmpp-middleware/src/controller/kubesphere.ListProjects: 48) {map[]} 
+[2023-07-20 14:22:44] [INFO] [Recovery] 2023/07/20 - 14:22:44 panic recovered:
+unable to parse requirement: <nil>: Invalid value: "&LabelSelector{MatchLabels:map[string]string{kubesphere.io/workspace:": prefix part a lowercase RFC 1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*'); name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]')
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/errorx/errorx.go:40 (0x2ecaf58)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/toolkits/pkg@v1.2.9/ginx/errorx.go:10 (0x2f11a7b)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:49 (0x2f1efbe)
+	ListProjects: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2dc88bc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x2f353ba)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2dc88bc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x2f3362e)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x2dc88bc)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x2dd7c93)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x2dd7764)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xcf5e33)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xcef714)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x749340)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 14:22:58] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:22:58] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:22:58] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:22:58] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:22:58] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:23:10] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:16.8508ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:23:35] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:23:36] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:23:36] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:23:36] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:23:36] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:24:52] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:1m14.1278449s req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:28:08] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:08] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:08] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:28:08] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:08] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:18] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:20.3143ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:28:40] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:40] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:40] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:28:40] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:28:40] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:29:43] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:1m0.8300584s req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:30:55] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:30:56] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:30:56] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:30:56] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:30:56] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:31:00] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:24.4413ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:31:21] [INFO] [Recovery] 2023/07/20 - 14:31:21 panic recovered:
+runtime error: invalid memory address or nil pointer dereference
+C:/Program Files/Go/src/runtime/panic.go:260 (0x4a0e66)
+	panicmem: }
+C:/Program Files/Go/src/runtime/signal_windows.go:257 (0x4a0e36)
+	sigpanic: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/kubernetes/namespace.go:62 (0x1c78273)
+	GetNamespaces: })
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/service/kubesphere/project.go:32 (0x1e3df15)
+	(*projectService).GetProjectList: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/controller/kubesphere/project.go:46 (0x1e3ecb1)
+	ListProjects: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x1e4b00b)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/logrus.go:62 (0x1e4afe8)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x1e49fba)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/middleware/src/util/aop/recovery.go:94 (0x1e49fa6)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/context.go:168 (0x1d6e1ea)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:555 (0x1d6de71)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/workspace/previous/work/work/workspace/mwpath/pkg/mod/github.com/gin-gonic/gin@v1.7.7/gin.go:511 (0x1d6d991)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0x82b755)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0x826c71)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x4c0e60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m (github.com/mensylisir/kmpp-middleware/src/util/aop.CustomRecoveryWithWriter.func1.1: 82) {map[]} 
+[2023-07-20 14:33:38] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:33:38] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:33:38] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:33:38] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:33:38] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:33:48] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:20.5642ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:33:51] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:17.2976ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d status_code:200]} 
+[2023-07-20 14:34:24] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:11.7392ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=admin status_code:200]} 
+[2023-07-20 14:35:05] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:35:06] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:35:06] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:35:06] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:35:06] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:35:56] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:47.0906621s req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=admin status_code:200]} 
+[2023-07-20 14:36:48] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:36:48] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:36:48] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:36:48] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:36:48] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:39:09] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:2m18.778844s req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=admin status_code:200]} 
+[2023-07-20 14:39:22] [INFO] start phase [encrypt] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:39:23] [INFO] start phase [db] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:39:23] [INFO] no databases change,skip migrate (github.com/mensylisir/kmpp-middleware/src/migrate.(*InitMigrateDBPhase).Init: 76) {map[]} 
+[2023-07-20 14:39:23] [INFO] start phase [migrate] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:39:23] [INFO] start phase [cron] success (github.com/mensylisir/kmpp-middleware/src/server.Server.initialize: 123) {map[]} 
+[2023-07-20 14:39:25] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:17.4659ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=admin status_code:200]} 
+[2023-07-20 14:39:49] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:15.8269ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d status_code:200]} 
+[2023-07-20 14:39:55] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:18.638ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju status_code:200]} 
+[2023-07-20 14:41:39] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:9.9025ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=liyu status_code:200]} 
+[2023-07-20 14:41:46] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:11.6141ms req_method:GET req_uri:/api/v1/cluster/workspace/project/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d&workspace_name=wuju&username=admin status_code:200]} 
+[2023-07-20 14:43:36] [INFO]  (github.com/mensylisir/kmpp-middleware/src/util/aop.Logrus.func1: 83) {map[client_ip:127.0.0.1 latency_time:13.4295ms req_method:GET req_uri:/api/v1/cluster/iam/user/list?cluster_id=5e810d5f-1c0c-dcb2-8031-bde03d62135d status_code:200]} 
