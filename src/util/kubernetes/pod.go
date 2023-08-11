@@ -237,6 +237,7 @@ func GetPodInfo(instance *entity.Instance) (pods chan []*v1.Pod) {
 	//informer.AddEventHandler(cache.ResourceEventHandlerFuncs{
 	//	AddFunc: func(obj interface{}) {
 	//		pod := obj.(*v1.Pod)
+	//		pod.Status
 	//	},
 	//	UpdateFunc: func(oldObj, newObj interface{}) {
 	//		pod := newObj.(*v1.Pod)
